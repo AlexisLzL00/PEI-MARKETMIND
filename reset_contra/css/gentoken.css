@@ -1,0 +1,55 @@
+/* Estilos para el cuerpo del documento */
+body {
+    background-color: #333; /* Negro */
+    color: #fff; /* Blanco */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado */
+h1 {
+    color: #fff; /* Blanco */
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: rgba(255, 255, 255, 0.1); /* Blanco con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para las etiquetas */
+label {
+    color: #ccc; /* Gris oscuro */
+}
+
+/* Estilos para el campo de entrada de correo electrónico */
+input[type="email"] {
+    background-color: rgba(255, 255, 255, 0.5); /* Blanco con transparencia */
+    color: #333; /* Negro */
+    border: 1px solid #ccc; /* Gris oscuro */
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón de envío */
+button {
+    background-color: #333; /* Negro */
+    color: #fff; /* Blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de envío al pasar el ratón sobre él */
+button:hover {
+    background-color: #444; /* Negro ligeramente más oscuro */
+}
+
+/* Estilos para el botón de envío al hacer clic */
+button:active {
+    background-color: #222; /* Negro más oscuro */
+}

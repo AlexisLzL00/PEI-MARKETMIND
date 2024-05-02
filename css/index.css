@@ -1,0 +1,479 @@
+body {
+    margin-top: 60px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0f0f0f; /* Amarillo brillante */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #ab0566; /* Morado intenso */
+    position: fixed;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    z-index: 2; /* Asegura que el header esté sobre el resto del contenido */
+}
+
+nav.navbar {
+    z-index: 1; /* Asegura que el navbar esté detrás del header */
+}
+
+/* Estilos para el contenido del encabezado */
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen detrás del texto */
+    opacity: 0.5; /* Ajusta la opacidad de la imagen */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav.navbar {
+    background-color:#070707;
+    z-index: 7;
+ /* Negro semitransparente utilizando RGBA */
+}
+
+nav.navbar a {
+    color: #d1d0e0;
+}
+.navbar-brand img {
+    max-height: 40px;
+    border-radius: 50%; /* Añade bordes redondeados a la imagen */
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    background: none;
+}
+.navbar-toggler-icon {
+    background-color: none; /* Color blanco para el icono del botón de navegación */
+}
+
+.navbar-toggler-icon .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    display: block;
+    margin-top: 5px;
+    transition: 0.4s;
+}
+
+.navbar-toggler-icon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.navbar-toggler-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler-icon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.navbar-toggler:hover .bar {
+    background-color: #e9e9e7;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b3b1a7;
+}
+.navbar-nav .nav-link {
+    color: white; /* Color del texto de los enlaces */
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #97978d; /* Color dorado al pasar el ratón sobre los enlaces */
+}
+
+/* Estilos para el carrusel */
+#carouselExample {
+    width: 100%;
+    z-index: 1;
+    max-height: 550px; /* Ajusta el valor según sea necesario */
+}
+
+.carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 450px; /* Ajusta el valor según sea necesario */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Agrega espacio entre la sección del carrusel y el contenido principal */
+section {
+    margin-top: 20px;
+}
+
+
+.carousel-item {
+    text-align: center; /* Centra el contenido dentro de los carruseles */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px; /* Ajusta la esquina redondeada de la caption */
+}
+
+.carousel-caption h5 {
+    color: #fff; /* Color del texto del título */
+}
+
+.carousel-caption p {
+    color: #ddd; /* Color del texto de la descripción */
+}
+
+/* Estilos mejorados para las flechas del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%; /* Ancho de las flechas */
+    font-size: 2rem; /* Tamaño del icono de flecha */
+    color: #fff; /* Color de las flechas */
+    background: none; /* Fondo transparente */
+    border: none; /* Borde sin estilo */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Fondo transparente */
+}
+
+.carousel-control-prev {
+    left: 0; /* Ajusta la posición de la flecha izquierda */
+}
+
+.carousel-control-next {
+    right: 0; /* Ajusta la posición de la flecha derecha */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #aaa; /* Cambia el color al pasar el mouse por encima */
+}
+
+
+.carousel-indicators li {
+    background-color: #333; /* Color de fondo de los indicadores */
+    border-radius: 50%; /* Hace que los indicadores sean circulares */
+    border: 1px solid #fff; /* Borde de los indicadores */
+}
+
+.carousel-indicators .active {
+    background-color: #fff; /* Color de fondo del indicador activo */
+    border-color: #333; /* Borde del indicador activo */
+}
+
+
+
+main {
+    margin-bottom: 20px; /* Altura del footer */
+}
+/* Estilos para la barra de navegación */
+main {
+    flex: 1;
+    padding: 20px;
+    margin-top: 20px; /* Ajusta según el tamaño del header */
+    z-index: 0; /* Asegura que el main esté detrás del navbar y el header */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #ffffff; /* Color de fondo blanco */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+section {
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+.bienvenida-section {
+    background-color: #535C91;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    color: #fff;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.bienvenida-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.bienvenida-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.recursos {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.5s;
+}
+
+.articulos,
+.guias,
+.recursos-adicionales {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.articulos h3,
+.guias h3,
+.recursos-adicionales h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.recursos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recursos ul li {
+    margin-bottom: 10px;
+}
+
+.recursos-adicionales ul li {
+    margin-bottom: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .bienvenida-section {
+      padding: 15px;
+    }
+  
+    .bienvenida-section h2 {
+      font-size: 2em;
+    }
+  
+    .bienvenida-section p {
+      font-size: 1em;
+    }
+  
+    .recursos {
+      flex-direction: column;
+    }
+  
+    .articulos,
+    .guias,
+    .recursos-adicionales {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .informacion-section {
+    background-color: #EFE7DA;
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.informacion-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.informacion-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.tema {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.tema h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.tema p {
+    font-size: 1em;
+}
+
+/* Animación */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.mision-section {
+    background-color: #F8F9FA;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.mision-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.mision-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+aside {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    border-radius: 15px;
+    right: -300px;
+    height: 100%;
+    width: 300px;
+    transition: right 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    z-index: 7; /* Asegura que el aside esté sobre el contenido principal */
+}
+
+
+
+aside a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+aside a:hover {
+    background-color: #444;
+}
+
+aside h3 {
+    border-bottom: 1px solid white;
+    padding: 10px 20px;
+}
+
+aside .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2; /* Asegura que el botón esté sobre el aside */
+}
+
+/* Añade estos estilos al final de tu archivo CSS */
+#open-btn {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+    transform: translateY(-50%);
+    transition: right 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#open-btn.active {
+    right: 300px; /* Ancho del aside */
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Estilo para el contenido principal al abrir el aside */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1; /* Asegura que la capa overlay esté sobre el contenido principal */
+    display: none;
+}
+
+/* Estilo para mostrar el aside al abrir */
+.show-aside {
+    right: 0;
+}
+
+/* Estilo para mostrar la overlay al abrir el aside */
+.show-overlay {
+    display: block;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #333;
+    margin-top: 20px; /* Ajusta según tus necesidades */
+}
